@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "noEmit": true,
+    "checkJs": false,
+    "jsx": "react",
+    "lib": ["dom", "webworker", "es2020"]
+  },
+  "include": ["*.js"],
+  "exclude": ["node_modules"]
+}

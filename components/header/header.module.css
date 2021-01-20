@@ -1,0 +1,40 @@
+.container {
+  height: 12vh;
+  display: flex;
+  padding: 0 2rem;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  transition: top 0.5s;
+}
+
+.logo_container {
+  max-width: 350px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo_image {
+  width: 100%;
+  height: auto;
+}
+
+.options {
+  display: flex;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.option {
+  align-self: center;
+  padding: 0 0.9rem;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.option:hover {
+  color: #d81e5b;
+}
