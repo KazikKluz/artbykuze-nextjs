@@ -8,7 +8,7 @@ const BlogCard = ({ title, date, imgUrl }) => {
       <div className={styles.imageContainer}>
         <img className={styles.image} alt="" src={imgUrl} />
       </div>
-      <h3 className={styleMedia.title}>{title}</h3>
+      <h3 className={styles.title}>{title}</h3>
       <p className={styles.postDate}>{date}</p>
     </div>
   );

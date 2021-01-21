@@ -30,8 +30,10 @@ const Header = () => {
     <div style={visibility}>
       <div className={styles.logo_container}>
         <Image
-          className={styles.logo_image}
-          src="/public/artbyKuzelogo.png"
+          // className={styles.logo_image}
+          width="525px"
+          height="129px"
+          src="/artbyKuzelogo.png"
           alt="logo"
         />
       </div>

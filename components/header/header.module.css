@@ -17,10 +17,10 @@
   align-items: center;
 }
 
-.logo_image {
+/* .logo_image {
   width: 100%;
   height: auto;
-}
+} */
 
 .options {
   display: flex;

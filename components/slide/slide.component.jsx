@@ -1,14 +1,17 @@
 import React from "react";
 
-import { SlideContainer, TheSlide, Background } from "./slide.styles";
+import styles from "./slide.module.css";
 
 const Slide = ({ picNo, show, id }) => {
   return (
-    <SlideContainer show={show} id={id}>
-      <TheSlide>
-        <Background style={{ backgroundImage: `url(${picNo})` }} />
-      </TheSlide>
-    </SlideContainer>
+    <div style={{ display: show === id ? "block" : "none" }}>
+      <div className={styles.theSlide}>
+        <div
+          className={styles.background}
+          style={{ backgroundImage: `url(/${picNo}.jpg)` }}
+        />
+      </div>
+    </div>
   );
 };
 

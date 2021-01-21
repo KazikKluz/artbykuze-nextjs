@@ -2,13 +2,13 @@ import React, { useState, useEffect, useCallback } from "react";
 
 import Slide from "../../components/slide/slide.component";
 
-import pic1 from "../slide/test1.jpg";
-import pic2 from "../slide/test2.jpg";
-import pic3 from "../slide/test3.jpg";
+// import pic1 from "../slide/test1.jpg";
+// import pic2 from "../slide/test2.jpg";
+// import pic3 from "../slide/test3.jpg";
 
 import styles from "./slideshow.module.css";
 
-const pictures = [pic1, pic2, pic3];
+const pictures = [1, 2, 3];
 
 const SlideShow = () => {
   const [show, setShow] = useState(0);

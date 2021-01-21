@@ -19,9 +19,10 @@ export default function Testimonials() {
     <div className={styles.hero}>
       <Image
         className={styles.image}
-        src="../../public/testim.jpg"
+        src="/testim.jpg"
         alt="test"
         width="2173px"
+        height="1569px"
         style={{
           transform: `translateY(${offset * 0.5 - 1600}px)`,
         }}
