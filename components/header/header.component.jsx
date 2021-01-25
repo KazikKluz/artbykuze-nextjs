@@ -27,7 +27,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div style={visibility}>
+    <div className={styles.container} style={visibility}>
       <div className={styles.logo_container}>
         <Image
           // className={styles.logo_image}

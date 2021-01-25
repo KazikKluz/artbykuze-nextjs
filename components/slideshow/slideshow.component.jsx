@@ -28,7 +28,7 @@ const SlideShow = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       shiftSlide(1);
-    }, 8000);
+    }, 10000);
     return () => clearInterval(interval);
   }, [shiftSlide]);
 

@@ -4,7 +4,10 @@ import styles from "./slide.module.css";
 
 const Slide = ({ picNo, show, id }) => {
   return (
-    <div style={{ display: show === id ? "block" : "none" }}>
+    <div
+      className={styles.container}
+      style={{ display: show === id ? "block" : "none" }}
+    >
       <div className={styles.theSlide}>
         <div
           className={styles.background}

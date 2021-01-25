@@ -2,7 +2,6 @@ import * as React from "react";
 import { useEffect, useState } from "react";
 
 import styles from "./testimonials.module.css";
-import Image from "next/image";
 
 export default function Testimonials() {
   const [offset, setOffset] = useState(0);
@@ -17,10 +16,8 @@ export default function Testimonials() {
   }, []);
   return (
     <div className={styles.hero}>
-      <Image
+      <div
         className={styles.image}
-        src="/testim.jpg"
-        alt="test"
         width="2173px"
         height="1569px"
         style={{

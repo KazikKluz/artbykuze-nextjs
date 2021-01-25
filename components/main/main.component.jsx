@@ -12,19 +12,19 @@ import SocialButtons from "./socialButtons";
 let cards = [
   {
     title: "Kuze's Drawings",
-    imageUrl: "https://picsum.photos/700",
+    imageUrl: "https://picsum.photos/800",
     id: 1,
     linkUrl: "shop/hats",
   },
   {
     title: "Available Paintings",
-    imageUrl: "https://picsum.photos/701",
+    imageUrl: "https://picsum.photos/801",
     id: 2,
     linkUrl: "shop/jackets",
   },
   {
     title: "Prints",
-    imageUrl: "https://picsum.photos/699",
+    imageUrl: "https://picsum.photos/799",
     id: 3,
     linkUrl: "shop/sneakers",
   },

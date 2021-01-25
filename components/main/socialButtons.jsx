@@ -29,11 +29,14 @@ const SocialButtons = () => {
   };
 
   const iconStyle = { color: "#d81e5b" };
-
+  console.log(offset);
   return (
     <div
       className={styles.buttons}
-      style={{ opacity: offset < 2100 && offset > 600 ? 1 : 0 }}
+      style={{
+        visibility: offset < 1964 && offset > 585 ? "visible" : "hidden",
+        opacity: offset < 1964 && offset > 585 ? 1 : 0,
+      }}
     >
       <SocialMediaButtons
         links={links}

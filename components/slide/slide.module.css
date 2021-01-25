@@ -1,3 +1,9 @@
+/* .container {
+  position: relative;
+  width: 99.2vw;
+  background-color: red;
+} */
+
 .theSlide {
   width: 100vw;
   height: 100vh;
@@ -6,10 +12,10 @@
 
 .background {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-size: cover;
   animation: fade 1.5s;
-  animation: blowUp 8s ease-in-out;
+  animation: blowUp 10s ease-in-out;
   animation-fill-mode: forwards;
 
   background-attachment: fixed;
