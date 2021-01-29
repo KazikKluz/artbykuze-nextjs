@@ -27,7 +27,7 @@
   transition: 0.6s ease;
   border-radius: 7px 0 0 7px;
   user-select: none;
-  right: 0;
+  right: 15px;
 }
 
 .next:hover {

@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 
 import SlideShow from "../components/slideshow/slideshow.component";
 import Main from "../components/main/main.component";
+import TopButton from "../components/top-button/top-button.component";
 const Header = dynamic(() => import("../components/header/header.component"), {
   ssr: false,
 });
@@ -39,6 +40,7 @@ const Home = () => {
         <Header />
         <SlideShow />
         <Main />
+        <TopButton />
       </div>
     </>
   );

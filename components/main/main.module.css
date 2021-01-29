@@ -26,5 +26,5 @@
   top: 41vh;
   left: 5px;
   z-index: 1;
-  transition: visibility 0s, opacity 0.8s;
+  transition: visibility 0.8s, opacity 0.8s;
 }

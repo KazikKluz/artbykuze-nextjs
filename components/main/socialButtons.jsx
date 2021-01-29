@@ -34,8 +34,8 @@ const SocialButtons = () => {
     <div
       className={styles.buttons}
       style={{
-        visibility: offset < 1964 && offset > 585 ? "visible" : "hidden",
-        opacity: offset < 1964 && offset > 585 ? 1 : 0,
+        visibility: offset < 1746 && offset > 585 ? "visible" : "hidden",
+        opacity: offset < 1746 && offset > 585 ? 1 : 0,
       }}
     >
       <SocialMediaButtons
