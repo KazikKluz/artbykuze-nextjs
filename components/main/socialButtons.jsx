@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import SocialMediaButtons from "react-social-media-buttons";
+import WithHover from "./withHover";
 
 import styles from "./main.module.css";
 
@@ -28,7 +29,8 @@ const SocialButtons = () => {
     margin: "-11px",
   };
 
-  const iconStyle = { color: "#d81e5b" };
+  const iconStyle = { color: "red" };
+
   console.log(offset);
   return (
     <div
@@ -43,6 +45,7 @@ const SocialButtons = () => {
         buttonStyle={buttonStyle}
         iconStyle={iconStyle}
       />
+      <WithHover />
     </div>
   );
 };

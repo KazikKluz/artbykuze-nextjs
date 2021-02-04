@@ -28,3 +28,7 @@
   z-index: 1;
   transition: visibility 0.8s, opacity 0.8s;
 }
+
+.iconStyle {
+  color: red;
+}
