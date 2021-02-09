@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-import SocialMediaButtons from "react-social-media-buttons";
 import WithHover from "./withHover";
 
 import styles from "./main.module.css";
@@ -16,36 +15,19 @@ const SocialButtons = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const links = [
-    "https://facebook.com",
-    "https://instagram.com",
-    "https://behance.com",
-  ];
-
-  const buttonStyle = {
-    backgroundColor: "transparent",
-    width: "65px",
-    height: "65px",
-    margin: "-11px",
-  };
-
-  const iconStyle = { color: "red" };
 
   console.log(offset);
   return (
     <div
       className={styles.buttons}
       style={{
-        visibility: offset < 1746 && offset > 585 ? "visible" : "hidden",
-        opacity: offset < 1746 && offset > 585 ? 1 : 0,
+        visibility: offset < 1965 && offset > 594 ? "visible" : "hidden",
+        opacity: offset < 1965 && offset > 594 ? 1 : 0,
       }}
     >
-      <SocialMediaButtons
-        links={links}
-        buttonStyle={buttonStyle}
-        iconStyle={iconStyle}
-      />
-      <WithHover />
+      <WithHover url="https://facebook.com" />
+      <WithHover url="https://instagram.com" />
+      <WithHover url="https://behance.com" />
     </div>
   );
 };

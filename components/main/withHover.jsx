@@ -2,13 +2,13 @@ import React, { useState } from "react";
 
 import SocialMediaButtons from "react-social-media-buttons";
 
-const WithHover = () => {
+const WithHover = ({ url }) => {
   const [isHover, setHover] = useState(false);
 
   // const normal = { color: "#d81e5b" };
-  const iconStyle = { color: isHover ? "red" : "blue" };
+  const iconStyle = { color: isHover ? "#510860" : "#d81e5b" };
 
-  const links = ["https://facebook.com"];
+  const links = [url];
 
   const buttonStyle = {
     backgroundColor: "transparent",

@@ -13,8 +13,13 @@ const TopButton = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <button
+      onClick={handleClick}
       style={{
         visibility: offset > 73 ? "visible" : "hidden",
         opacity: offset > 73 ? 0.6 : 0,

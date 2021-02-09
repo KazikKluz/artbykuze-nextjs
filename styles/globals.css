@@ -1,8 +1,11 @@
-html,
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   color: #2b1d00;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 a {

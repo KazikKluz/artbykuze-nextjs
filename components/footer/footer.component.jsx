@@ -15,7 +15,6 @@ const Footer = () => {
         </p>
         <SocialButtons />
       </div>
-      <button className={styles.top_button} />
     </div>
   );
 };
