@@ -19,9 +19,9 @@ const Cta = () => {
           My name is Ausrine Kuze. I am an artist originally from Lithuania. I
           have drawn ever since childhood and it has been a lifelong passion. I
           eventually pursued studying art at the third level and graduated from
-          Art Academy with a Bachelor`&#39`s degree in Glasswork studies. I
-          moved to Dublin ten years ago where I studied illustration at
-          Ballyfermot College of Further Education.
+          Art Academy with a Bachelor's degree in Glasswork studies. I moved to
+          Dublin ten years ago where I studied illustration at Ballyfermot
+          College of Further Education.
         </p>
       </div>
       <div className={styles.inner_box}>
