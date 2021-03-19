@@ -1,6 +1,17 @@
 .gallery_item {
   box-shadow: 10px 10px 20px #857e7b;
-  margin: 15px;
+  margin: 1%;
+  width: 30%;
+}
+
+.gallery_item:nth-child(3n + 1) {
+  order: 1;
+}
+.gallery_item:nth-child(3n + 2) {
+  order: 2;
+}
+.gallery_item:nth-child(3n) {
+  order: 3;
 }
 
 .image-container {

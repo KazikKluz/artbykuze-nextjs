@@ -5,11 +5,13 @@ import styles from "../styles/Home.module.css";
 import SlideShow from "../components/slideshow/slideshow.component";
 import Main from "../components/main/main.component";
 import TopButton from "../components/top-button/top-button.component";
+import LogRocket from "logrocket";
 const Header = dynamic(() => import("../components/header/header.component"), {
   ssr: false,
 });
 
 const Home = () => {
+  LogRocket.init("pqgxdf/artbykuze-next");
   return (
     <>
       <Head>

@@ -1,43 +1,43 @@
 let images = [
   {
-    imageUrl: "https://picsum.photos/702",
+    imageUrl: "https://picsum.photos/302",
     id: 1,
   },
   {
-    imageUrl: "https://picsum.photos/703",
+    imageUrl: "https://picsum.photos/303",
     id: 2,
   },
   {
-    imageUrl: "https://picsum.photos/704",
+    imageUrl: "https://picsum.photos/304",
     id: 3,
   },
 
   {
-    imageUrl: "https://picsum.photos/700",
+    imageUrl: "https://picsum.photos/300",
     id: 4,
   },
   {
-    imageUrl: "https://picsum.photos/701",
+    imageUrl: "https://picsum.photos/301",
     id: 5,
   },
   {
-    imageUrl: "https://picsum.photos/705",
+    imageUrl: "https://picsum.photos/305/400",
     id: 6,
   },
   {
-    imageUrl: "https://picsum.photos/706",
+    imageUrl: "https://picsum.photos/306",
     id: 7,
   },
   {
-    imageUrl: "https://picsum.photos/707",
+    imageUrl: "https://picsum.photos/300/500",
     id: 8,
   },
   {
-    imageUrl: "https://picsum.photos/708",
+    imageUrl: "https://picsum.photos/308",
     id: 9,
   },
   {
-    imageUrl: "https://picsum.photos/709",
+    imageUrl: "https://picsum.photos/309/1000",
     id: 10,
   },
   {

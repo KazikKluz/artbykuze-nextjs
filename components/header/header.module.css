@@ -8,6 +8,8 @@
   background-color: white;
   z-index: 1;
   transition: top 0.5s;
+  border: 1px solid #fff;
+  box-shadow: 0.3px 0.3px 0.3px #857e7b;
 }
 
 .logo_container {

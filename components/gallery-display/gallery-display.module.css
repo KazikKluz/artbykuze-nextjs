@@ -1,7 +1,20 @@
 .gallery_display {
-  margin-top: 200px;
-  padding: 0 14%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-auto-flow: row dense;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 3200px;
+  padding: 5vh 15%;
+  margin-top: 12vh;
 }
+
+.gallery_display::before,
+.gallery_display::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+
+/* https://tobiasahlin.com/blog/common-flexbox-patterns/#masonry-or-mosaic */
+/* https://tobiasahlin.com/blog/masonry-with-css/ */
