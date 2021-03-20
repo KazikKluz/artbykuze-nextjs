@@ -7,33 +7,33 @@
   display: flex;
   align-items: center;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2.44rem;
   font-weight: 300;
-  padding: 50px 100px;
+  padding: 5rem 10rem;
 }
 
 .separator::before,
 .separator::after {
   content: "";
   flex: 1;
-  border-bottom: 1px solid grey;
+  border-bottom: 0.1rem solid grey;
 }
 
 .separator::before {
-  margin-right: 1rem;
+  margin-right: 1.62rem;
 }
 
 .separator::after {
-  margin-left: 1rem;
+  margin-left: 1.62rem;
 }
 
 .cards_container {
-  padding: 70px;
-  max-height: 600px;
-  max-width: 1300px;
+  padding: 7rem;
+  max-height: 60rem;
+  max-width: 130rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 45px;
+  grid-column-gap: 4.5rem;
 }

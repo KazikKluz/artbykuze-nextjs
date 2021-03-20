@@ -1,19 +1,19 @@
 .container {
   height: 12vh;
   display: flex;
-  padding: 0 2rem;
+  padding: 0 3.25rem;
   justify-content: space-between;
   position: fixed;
   width: 100%;
   background-color: white;
   z-index: 1;
   transition: top 0.5s;
-  border: 1px solid #fff;
-  box-shadow: 0.3px 0.3px 0.3px #857e7b;
+  /* border: 0.1rem solid #fff; */
+  box-shadow: 0.03rem 0.03rem 0.03rem #857e7b;
 }
 
 .logo_container {
-  max-width: 350px;
+  max-width: 35rem;
   height: auto;
   display: flex;
   align-items: center;
@@ -32,8 +32,8 @@
 
 .option {
   align-self: center;
-  padding: 0 0.9rem;
-  font-size: 0.9rem;
+  padding: 0 1.46rem;
+  font-size: 1.46rem;
   width: 100%;
 }
 

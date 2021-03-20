@@ -1,5 +1,5 @@
 .gallery_item {
-  box-shadow: 10px 10px 20px #857e7b;
+  box-shadow: 1rem 1rem 2rem #857e7b;
   margin: 1%;
   width: 30%;
   font-size: 0;
@@ -16,8 +16,8 @@
 }
 
 .image-container {
-  border: 2px solid #fff;
-  box-shadow: 10px 10px 20px #857e7b;
+  border: 0.2rem solid #fff;
+  box-shadow: 1rem 1rem 2rem #857e7b;
 }
 
 .image {

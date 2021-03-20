@@ -29,21 +29,21 @@ const Cta = () => {
         <p className={styles.paragraph}>
           Small Paintings Now Available
           <br />
-          <span style={{ fontSize: "0.65rem", letterSpacing: "-0.5px" }}>
+          <span style={{ fontSize: "1.06rem", letterSpacing: "-0.05rem" }}>
             29th November 2020
           </span>
         </p>
         <p className={styles.paragraph}>
           Kuze - International Artist
           <br />
-          <span style={{ fontSize: "0.65rem", letterSpacing: "-0.5px" }}>
+          <span style={{ fontSize: "1.06rem", letterSpacing: "-0.05rem" }}>
             9th October 2020
           </span>
         </p>
         <p className={styles.paragraph}>
           Quality Time
           <br />
-          <span style={{ fontSize: "0.65rem", letterSpacing: "-0.5px" }}>
+          <span style={{ fontSize: "1.06rem", letterSpacing: "-0.05rem" }}>
             26th April 2020
           </span>
         </p>

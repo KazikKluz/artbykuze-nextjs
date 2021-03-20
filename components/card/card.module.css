@@ -7,15 +7,15 @@
 
 .title {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 2.11rem;
   font-weight: 300;
 }
 
 .image_container {
   justify-self: flex-start;
-  margin-top: 35px;
+  margin-top: 3.5rem;
   margin-bottom: auto;
-  box-shadow: 10px 10px 20px #857e7b;
+  box-shadow: 1rem 1rem 2rem #857e7b;
 }
 
 .image {

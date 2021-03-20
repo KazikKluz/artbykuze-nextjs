@@ -1,46 +1,46 @@
 .frame {
   background-color: #2b1d00;
   width: 100%;
-  height: 5rem;
+  height: 8.1rem;
   display: flex;
   justify-content: center;
 }
 
 .paragraph {
-  font-size: 0.7rem;
+  font-size: 1.14rem;
   color: #fff;
   display: inline-block;
-  padding-top: 35px;
+  padding-top: 3.5rem;
 }
 
 .buttons {
-  padding-top: 25px;
+  padding-top: 2.5rem;
   display: inline-block;
-  margin-right: 200px;
+  margin-right: 20rem;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+  width: 120rem;
   margin: 0 auto;
-  transform: translateX(50px);
+  transform: translateX(5rem);
 }
 
 .top_button {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
+  bottom: 2rem; /* Place the button at the bottom of the page */
+  right: 3rem; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: red; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  padding: 1.5rem; /* Some padding */
+  border-radius: 1rem; /* Rounded corners */
+  font-size: 1.8rem; /* Increase font size */
 }
 
 .top_button:hover {
