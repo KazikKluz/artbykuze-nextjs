@@ -2,6 +2,7 @@
   box-shadow: 10px 10px 20px #857e7b;
   margin: 1%;
   width: 30%;
+  font-size: 0;
 }
 
 .gallery_item:nth-child(3n + 1) {

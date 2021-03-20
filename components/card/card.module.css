@@ -2,6 +2,7 @@
   background-color: white;
   display: flex;
   flex-direction: column;
+  font-size: 0;
 }
 
 .title {
@@ -14,7 +15,6 @@
   justify-self: flex-start;
   margin-top: 35px;
   margin-bottom: auto;
-  border: 2px solid #fff;
   box-shadow: 10px 10px 20px #857e7b;
 }
 
