@@ -12,10 +12,10 @@ let images = [
     height: "303px",
   },
   {
-    imageUrl: "https://picsum.photos/304",
+    imageUrl: "https://picsum.photos/704",
     id: 3,
-    width: "304px",
-    height: "304px",
+    width: "704px",
+    height: "704px",
   },
 
   {
