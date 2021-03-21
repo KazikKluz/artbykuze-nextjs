@@ -3,15 +3,15 @@ import Image from "next/image";
 
 import styles from "./gallery-item.module.scss";
 
-const GalleryItem = ({ src }) => (
+const GalleryItem = ({ imageUrl, width, height }) => (
   <div className={styles.gallery_item}>
     <div className={styles.image_container}>
       <Image
         className={styles.image}
-        width="300px"
-        height="300px"
-        alt=""
-        src={src}
+        src={imageUrl}
+        width={width}
+        height={height}
+        layout="responsive"
       />
     </div>
     <div className={styles.description}>

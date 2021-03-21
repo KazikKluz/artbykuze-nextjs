@@ -9,8 +9,8 @@ import styles from "./gallery-display.module.css";
 const GalleryDisplay = () => {
   return (
     <div className={styles.gallery_display}>
-      {images.map(({ imageUrl, id }) => {
-        return <GalleryItem key={id} id={id} src={imageUrl} />;
+      {images.map(({ id, ...otherProps }) => {
+        return <GalleryItem key={id} {...otherProps} />;
       })}
     </div>
   );
