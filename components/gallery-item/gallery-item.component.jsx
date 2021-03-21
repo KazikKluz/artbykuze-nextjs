@@ -14,7 +14,10 @@ const GalleryItem = ({ src }) => (
         src={src}
       />
     </div>
-    <p className={styles.description}>Some text</p>
+    <div className={styles.description}>
+      <p className={styles.text_main}>Some text</p>
+      <p className={styles.text_sub}>More detailed description</p>
+    </div>
   </div>
 );
 
