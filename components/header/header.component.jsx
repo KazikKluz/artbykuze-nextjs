@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 
 import Image from "next/image";
 
-import styles from "./header.module.css";
+import styles from "./header.module.scss";
+
+import Hamburger from "../hamburger/hamburger.component";
 
 const Header = () => {
   const [visibility, setVisibility] = useState({ top: "0" });
@@ -38,13 +40,14 @@ const Header = () => {
         />
       </div>
       <div className={styles.options}>
-        <div className={styles.option}>ABOUT</div>
-        <div className={styles.option}>PAINTINGS</div>
-        <div className={styles.option}>DRAWINGS</div>
-        <div className={styles.option}>EXIBITIONS</div>
-        <div className={styles.option}>BLOG</div>
-        <div className={styles.option}>CONTACT</div>
+        <a className={styles.option}>ABOUT</a>
+        <a className={styles.option}>PAINTINGS</a>
+        <a className={styles.option}>DRAWINGS</a>
+        <a className={styles.option}>EXIBITIONS</a>
+        <a className={styles.option}>BLOG</a>
+        <a className={styles.option}>CONTACT</a>
       </div>
+      <Hamburger />
     </div>
   );
 };
