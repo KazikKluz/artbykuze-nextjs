@@ -16,7 +16,6 @@ const SocialButtons = () => {
     };
   }, []);
 
-  console.log(offset);
   return (
     <div
       className={styles.buttons}

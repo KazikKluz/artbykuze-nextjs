@@ -6,7 +6,7 @@
   position: fixed;
   width: 100%;
   background-color: white;
-  z-index: 1;
+  z-index: 2;
   transition: top 0.5s;
   /* border: 0.1rem solid #fff; */
   box-shadow: 0.03rem 0.03rem 0.03rem #857e7b;
@@ -20,11 +20,15 @@
   display: flex;
   font-weight: 200;
   cursor: pointer;
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
   /* Show Hamburger Icon */
-  .options {
+  .hamburger {
     display: none;
   }
 }

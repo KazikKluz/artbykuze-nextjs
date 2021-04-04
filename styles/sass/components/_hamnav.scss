@@ -1,0 +1,43 @@
+.hamnav {
+  position: fixed;
+  display: block;
+  width: 100vw;
+  height: 89vh;
+  margin-top: 12vh;
+  background-color: $color-violet;
+  // opacity: 0.8;
+  z-index: 1;
+  padding-top: 10rem;
+  transition: all 0.5s ease-in-out;
+
+  &__option {
+    display: inline-block;
+    width: 100%;
+    color: $color-white;
+    backface-visibility: hidden;
+
+    &.opt1 {
+      @include slideDownDelayed(0.4s);
+    }
+
+    &.opt2 {
+      @include slideDownDelayed(0.6s);
+    }
+
+    &.opt3 {
+      @include slideDownDelayed(0.8s);
+    }
+
+    &.opt4 {
+      @include slideDownDelayed(1s);
+    }
+
+    &.opt5 {
+      @include slideDownDelayed(1.2s);
+    }
+
+    &.opt6 {
+      @include slideDownDelayed(1.4s);
+    }
+  }
+}

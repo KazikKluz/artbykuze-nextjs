@@ -1,23 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 
-const Hamburger = () => {
-  const [active, setActive] = useState("is-active");
-
-  const handleClick = () => {
-    setActive((prevState) => {
-      return prevState === "is-active" ? "" : "is-active";
-    });
-  };
-
+const Hamburger = ({ active, handleClick }) => {
   return (
     <button
-      onClick={handleClick}
-      className={`hamburger hamburger--spring ${active}`}
+      onClick={() => handleClick()}
+      className={`hamburger hamburger--spring u-hide-800 
+       ${active}`}
       type="button"
     >
       <span className="hamburger-box">
         <span className="hamburger-inner"></span>
       </span>
+      <style jsx>{`
+        @media screen and (min-width: 800px) {
+          .hambuger {
+            display: none;
+          }
+        }
+      `}</style>
     </button>
   );
 };
