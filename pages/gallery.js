@@ -22,7 +22,6 @@ const Gallery = () => {
         <meta name="theme-color" content="#000000" />
         <meta name="description" />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap"

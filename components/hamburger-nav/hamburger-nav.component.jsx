@@ -24,7 +24,7 @@ const HamburgerNav = ({ active }) => {
       <style jsx>{`
         .hamnav {
           top: ${active ? "0" : "-88vh"};
-          opacity: ${active ? "0.8" : "0"};
+          opacity: ${active ? "0.9" : "0"};
         }
         .hamnav__option {
           display: ${active ? "inline-block" : "none"};
