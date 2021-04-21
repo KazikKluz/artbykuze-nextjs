@@ -19,3 +19,29 @@
     transform: translateY(-95rem);
   }
 }
+
+div.parallax {
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  z-index: -1;
+  overflow: hidden;
+}
+
+div.parallax::after {
+  background-image: url("../../../public/testim.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  content: "";
+  transform: translateZ(-1px) scale(2.7);
+  -webkit-transform: translateZ(-1px) scale(2.7);
+}

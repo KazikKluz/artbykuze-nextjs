@@ -1,6 +1,14 @@
 html {
   overflow-x: hidden;
   font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  // overflow-y: auto;
+  // perspective: 1px;
+  // -webkit-perspective: 1px;
+  // transform-style: preserve-3d;
+  // -webkit-transform-style: preserve-3d;
+  // overflow: hidden;
 
   @media screen and (max-width: 800px) {
     font-size: 45%;
@@ -12,6 +20,15 @@ body {
   color: #2b1d00;
   overflow: hidden;
   box-sizing: border-box;
+
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+  -webkit-perspective: 1px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 
 a {

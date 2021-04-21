@@ -1,17 +1,24 @@
-.hero {
-  width: 100%;
-  height: 60vh;
+.image {
+  width: 100vw;
+  height: 100vh;
   position: relative;
-  overflow: hidden;
+  bottom: -800px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 
-.image {
+.image::after {
+  background-image: url("../../public/testim.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  background-image: url("/testim.jpg");
-  background-size: 217.3rem 156.9rem;
-  width: 217.3rem;
-  height: 156.9rem;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  content: "";
+  transform: translateZ(-1px) scale(2);
+  -webkit-transform: translateZ(-1px) scale(2);
 }

@@ -6,7 +6,7 @@
 }
 
 .cards_container {
-  padding: 7rem 0;
+  padding: 7rem;
   /* max-height: 60rem; */
   max-width: 130rem;
   margin: 6rem auto;
@@ -37,8 +37,6 @@
   .cards_container {
     max-width: 70%;
     grid-template-columns: 1fr;
-  }
-
-  .buttons {
+    padding: 7rem 0;
   }
 }

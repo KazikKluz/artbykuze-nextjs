@@ -44,9 +44,9 @@ const SlideShow = () => {
       <div className={styles.next} onClick={() => shiftSlide(1)}>
         &#9658;
       </div>
-      <div onClick={handleClick} className={styles.down}>
+      <a href="#main" className={styles.down}>
         &#9660;
-      </div>
+      </a>
     </div>
   );
 };

@@ -31,7 +31,7 @@ let cards = [
 ];
 
 const Main = () => (
-  <div className={styles.container}>
+  <div id="main" className={styles.container}>
     <div className={styles.cards_container}>
       {cards.map(({ title, id, imageUrl }) => (
         <Card key={id} title={title} imgUrl={imageUrl} />
