@@ -55,3 +55,9 @@
     transform: translateY(0);
   }
 }
+
+@media screen and (max-width: 800px) {
+  .theButton {
+    font-size: 1.9rem;
+  }
+}

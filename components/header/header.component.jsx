@@ -22,7 +22,6 @@ const Header = () => {
 
   const handleScroll = () => {
     let currentScrollPos = window.pageYOffset;
-
     if (prevScrollPos > currentScrollPos) {
       setVisibility({ top: 0 });
     } else {
@@ -60,11 +59,6 @@ const Header = () => {
         <Hamburger handleClick={handleClick} active={active} />
       </div>
       <HamburgerNav active={active} />
-      <style jsx global>{`
-        body {
-          position: ${active ? "fixed" : "relative"};
-        }
-      `}</style>
     </div>
   );
 };

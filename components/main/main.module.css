@@ -1,13 +1,13 @@
 .container {
   height: 100%;
   width: 100%;
-  margin: 0 auto;
+  margin: 9rem auto 0 auto;
   position: relative;
 }
 
 .cards_container {
-  padding: 7rem;
-  max-height: 60rem;
+  padding: 7rem 0;
+  /* max-height: 60rem; */
   max-width: 130rem;
   margin: 6rem auto;
   display: grid;
@@ -31,4 +31,14 @@
 
 .iconStyle {
   color: red;
+}
+
+@media screen and (max-width: 800px) {
+  .cards_container {
+    max-width: 70%;
+    grid-template-columns: 1fr;
+  }
+
+  .buttons {
+  }
 }

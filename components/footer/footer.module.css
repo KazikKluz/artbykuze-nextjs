@@ -4,6 +4,7 @@
   height: 8.1rem;
   display: flex;
   justify-content: center;
+  display: block;
 }
 
 .paragraph {
@@ -45,4 +46,27 @@
 
 .top_button:hover {
   background-color: #555;
+}
+
+@media screen and (max-width: 800px) {
+  .frame {
+    height: 15rem;
+    margin: 0 auto;
+  }
+  .container {
+    flex-direction: column;
+    align-content: center;
+    margin: 0 auto;
+    width: 100%;
+    transform: translateX(0);
+  }
+
+  .buttons {
+    margin: 0 auto;
+  }
+
+  .paragraph {
+    text-align: center;
+    font-size: 1.3rem;
+  }
 }

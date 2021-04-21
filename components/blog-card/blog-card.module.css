@@ -31,3 +31,16 @@
   width: 100%;
   height: 100%;
 }
+
+@media screen and (max-width: 800px) {
+  .theCard:not(:last-child) {
+    margin-bottom: 15rem;
+  }
+  .title {
+    font-size: 3rem;
+  }
+
+  .postDate {
+    font-size: 1.8rem;
+  }
+}

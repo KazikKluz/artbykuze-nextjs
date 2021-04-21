@@ -28,12 +28,23 @@
 }
 
 .cards_container {
-  padding: 7rem;
-  max-height: 60rem;
+  padding: 7rem 0;
+  /* max-height: 60rem; */
   max-width: 130rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 4.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .cards_container {
+    max-width: 70%;
+    grid-template-columns: 1fr;
+  }
+
+  .separator {
+    font-size: 3rem;
+  }
 }

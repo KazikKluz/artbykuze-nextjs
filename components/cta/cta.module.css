@@ -30,3 +30,9 @@
   text-align: left;
   font-size: 1.46rem;
 }
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: none;
+  }
+}
