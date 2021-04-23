@@ -18,48 +18,53 @@ const Header = () => {
     });
   };
 
-  let prevScrollPos = window.pageYOffset;
+  let position = 0;
 
   const handleScroll = () => {
-    let currentScrollPos = window.pageYOffset;
-    if (prevScrollPos > currentScrollPos) {
-      setVisibility({ top: 0 });
+    let currentScrollPos = document.body.scrollTop;
+    if (currentScrollPos < position) {
+      setVisibility({ top: "0" });
     } else {
-      setVisibility({ top: "-12vh" });
+      {
+        !active && setVisibility({ top: "-12vh" });
+      }
     }
-    prevScrollPos = currentScrollPos;
+    position = currentScrollPos;
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    document.body.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    return () => document.body.removeEventListener("scroll", handleScroll);
+  }, [active]);
 
   return (
-    <div>
-      <div className={styles.container} style={visibility}>
-        <div className={styles.logo_container}>
-          <Image
-            // className={styles.logo_image}
-            width="525px"
-            height="129px"
-            src="/artbyKuzelogo.png"
-            alt="logo"
-          />
+    <>
+      <div style={visibility} className={styles.front}>
+        <div className={styles.container}>
+          <div className={styles.logo_container}>
+            <Image
+              width="525px"
+              height="129px"
+              src="/artbyKuzelogo.png"
+              alt="logo"
+            />
+          </div>
+          <div className={styles.options}>
+            <a className={styles.option}>ABOUT</a>
+            <a className={styles.option}>PAINTINGS</a>
+            <a className={styles.option}>DRAWINGS</a>
+            <a className={styles.option}>EXIBITIONS</a>
+            <a className={styles.option}>BLOG</a>
+            <a className={styles.option}>CONTACT</a>
+          </div>
+          <Hamburger handleClick={handleClick} active={active} />
         </div>
-        <div className={styles.options}>
-          <a className={styles.option}>ABOUT</a>
-          <a className={styles.option}>PAINTINGS</a>
-          <a className={styles.option}>DRAWINGS</a>
-          <a className={styles.option}>EXIBITIONS</a>
-          <a className={styles.option}>BLOG</a>
-          <a className={styles.option}>CONTACT</a>
+        <div className={styles.behind}>
+          <HamburgerNav active={active} />
         </div>
-        <Hamburger handleClick={handleClick} active={active} />
       </div>
-      <HamburgerNav active={active} />
-    </div>
+    </>
   );
 };
 

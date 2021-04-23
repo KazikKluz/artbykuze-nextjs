@@ -1,9 +1,9 @@
-.gallery_display {
+/* .gallery_display {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: space-between;
-  height: 320rem;
+  align-content: center;
+  height: 300vh;
   padding: 5vh 15%;
   margin-top: 12vh;
 }
@@ -14,7 +14,14 @@
   flex-basis: 100%;
   width: 0;
   order: 2;
-}
+} */
 
 /* https://tobiasahlin.com/blog/common-flexbox-patterns/#masonry-or-mosaic */
 /* https://tobiasahlin.com/blog/masonry-with-css/ */
+.gallery_display {
+  columns: 3 30rem;
+  column-gap: 4rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 9vh 10%;
+}

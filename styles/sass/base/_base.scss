@@ -1,8 +1,6 @@
 html {
   overflow-x: hidden;
   font-size: 62.5%;
-  scroll-behavior: smooth;
-
   // overflow-y: auto;
   // perspective: 1px;
   // -webkit-perspective: 1px;
@@ -21,6 +19,7 @@ body {
   overflow: hidden;
   box-sizing: border-box;
 
+  scroll-behavior: smooth;
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;

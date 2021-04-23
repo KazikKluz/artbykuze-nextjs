@@ -17,15 +17,14 @@
 .buttons {
   padding-top: 2.5rem;
   display: inline-block;
-  margin-right: 20rem;
 }
 
 .container {
   display: flex;
-  justify-content: space-between;
-  width: 120rem;
+  justify-content: space-around;
+  max-width: 120rem;
   margin: 0 auto;
-  transform: translateX(5rem);
+  /* transform: translateX(5rem); */
 }
 
 .top_button {

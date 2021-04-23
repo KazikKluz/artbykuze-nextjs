@@ -2,16 +2,16 @@ import * as React from "react";
 import { useEffect, useState } from "react";
 
 export default function Testimonials() {
-  //   const [offset, setOffset] = useState(0);
-  //   useEffect(() => {
-  //     function handleScroll() {
-  //       setOffset(window.pageYOffset);
-  //     }
-  //     window.addEventListener("scroll", handleScroll);
-  //     return () => {
-  //       window.removeEventListener("scroll", handleScroll);
-  //     };
-  //   }, []);
+  // const [offset, setOffset] = useState(0);
+  // useEffect(() => {
+  //   function handleScroll() {
+  //     setOffset(window.pageYOffset);
+  //   }
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
   return (
     <div
       className="parallax"
