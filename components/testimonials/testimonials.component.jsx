@@ -1,5 +1,4 @@
 import * as React from "react";
-import { useEffect, useState } from "react";
 
 export default function Testimonials() {
   // const [offset, setOffset] = useState(0);
@@ -15,11 +14,11 @@ export default function Testimonials() {
   return (
     <div
       className="parallax"
-      width="2173px"
-      height="1569px"
+      // width="2173px"
+      // height="1569px"
       // style={{
       //   transform: `translateY(${offset * 0.5 - 1600}px)`,
       // }}
-    />
+    ></div>
   );
 }

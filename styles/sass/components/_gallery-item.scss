@@ -87,6 +87,11 @@
   transform: translateY(0px);
   opacity: 1;
 }
+
+.reveal.non-active {
+  transform: translateY(-150px);
+  opacity: 0;
+}
 // .description {
 //   position: absolute;
 //   top: 50%;

@@ -28,10 +28,6 @@ const SlideShow = () => {
     return () => clearInterval(interval);
   }, [shiftSlide]);
 
-  const handleClick = () => {
-    window.scrollTo({ top: 1102, behavior: "smooth" });
-  };
-
   return (
     <div className={styles.container}>
       {pictures.map((pic, idx) => {

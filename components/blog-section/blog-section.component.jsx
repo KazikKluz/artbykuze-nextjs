@@ -5,23 +5,20 @@ import CustomButton from "../custom-button/custom-button.component";
 let blogCards = [
   {
     title: "Kuze's Drawings",
-    imageUrl: "https://picsum.photos/702",
+    imageUrl: "kuze1",
     id: 1,
-    linkUrl: "shop/hats",
     date: "13/12/1980",
   },
   {
     title: "Available Paintings",
-    imageUrl: "https://picsum.photos/703",
+    imageUrl: "kuze2",
     id: 2,
-    linkUrl: "shop/jackets",
     date: "14/1/1789",
   },
   {
     title: "Prints",
-    imageUrl: "https://picsum.photos/704",
+    imageUrl: "kuze3",
     id: 3,
-    linkUrl: "shop/sneakers",
     date: "7/5/1410",
   },
 ];

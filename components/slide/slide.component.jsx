@@ -1,4 +1,5 @@
 import React from "react";
+import Imgix from "react-imgix";
 
 import styles from "./slide.module.css";
 
@@ -9,9 +10,10 @@ const Slide = ({ picNo, show, id }) => {
       style={{ display: show === id ? "block" : "none" }}
     >
       <div className={styles.theSlide}>
-        <div
+        <Imgix
           className={styles.background}
-          style={{ backgroundImage: `url(/${picNo}.jpg)` }}
+          src={`https://artbykuze.imgix.net/${picNo}.jpg`}
+          sizes="100vw"
         />
       </div>
     </div>

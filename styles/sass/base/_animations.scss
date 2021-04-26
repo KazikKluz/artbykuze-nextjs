@@ -31,7 +31,7 @@ div.parallax {
 }
 
 div.parallax::after {
-  background-image: url("../../../public/testim.jpg");
+  background-image: url("https://artbykuze.imgix.net/testim.jpg?auto=format");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -44,4 +44,28 @@ div.parallax::after {
   content: "";
   transform: translateZ(-1px) scale(2.7);
   -webkit-transform: translateZ(-1px) scale(2.7);
+
+  @media screen and (max-width: 350px) {
+    background-image: url("https://artbykuze.imgix.net/testim.jpg?auto=format&w=420");
+  }
+
+  @media screen and (max-width: 800px) {
+    background-image: url("https://artbykuze.imgix.net/testim.jpg?auto=format&w=1000");
+  }
+
+  @media screen and (max-width: 1080px) {
+    background-image: url("https://artbykuze.imgix.net/testim.jpg?auto=format&w=1300");
+  }
+
+  @media screen and (max-width: 1280px) {
+    background-image: url("https://artbykuze.imgix.net/testim.jpg?auto=format&w=1550");
+  }
+
+  @media screen and (max-width: 1600px) {
+    background-image: url("https://artbykuze.imgix.net/testim.jpg?auto=format&w=1920");
+  }
+
+  @media screen and (max-width: 1920px) {
+    background-image: url("https://artbykuze.imgix.net/testim.jpg?auto=format&w=2320");
+  }
 }

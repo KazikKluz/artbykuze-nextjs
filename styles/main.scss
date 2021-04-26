@@ -17,6 +17,7 @@ $hamburger-layer-spacing: 1.2rem;
 @import "./sass/base/animations";
 
 @import "./sass/components/hamnav";
+@import "./sass/components/gallery-item";
 
 @media screen and (min-width: 800px) {
   .hamburger {
