@@ -19,6 +19,10 @@ $hamburger-layer-spacing: 1.2rem;
 @import "./sass/components/hamnav";
 @import "./sass/components/gallery-item";
 
+@import "./sass/layouts/grid";
+
+@import "./sass/pages/artwork.scss";
+
 @media screen and (min-width: 800px) {
   .hamburger {
     display: none;

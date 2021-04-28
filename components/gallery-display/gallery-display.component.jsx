@@ -14,7 +14,7 @@ const GalleryDisplay = () => {
     for (let i = 0; i < reveals.length; i++) {
       let revealtop = reveals[i].getBoundingClientRect().top;
       let revealBottom = reveals[i].getBoundingClientRect().bottom;
-      var revealpoint = 150;
+      var revealpoint = 100;
 
       if (revealtop < windowheight - revealpoint) {
         reveals[i].classList.add("active");

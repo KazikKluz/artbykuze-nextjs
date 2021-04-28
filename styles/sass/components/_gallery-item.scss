@@ -78,7 +78,7 @@
 }
 
 .reveal {
-  transform: translateY(150px);
+  transform: translateY(100px);
   opacity: 0;
   transition: all 2s ease;
 }
@@ -89,7 +89,7 @@
 }
 
 .reveal.non-active {
-  transform: translateY(-150px);
+  transform: translateY(-100px);
   opacity: 0;
 }
 // .description {

@@ -21,6 +21,7 @@ body {
 
   scroll-behavior: smooth;
   width: 100vw;
+  height: -webkit-fill-available;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
