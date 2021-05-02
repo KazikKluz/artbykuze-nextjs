@@ -3,10 +3,35 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 
 import Footer from "../components/footer/footer.component";
+import {
+  EmailShareButton,
+  FacebookShareButton,
+  PinterestShareButton,
+  TumblrShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
+  EmailIcon,
+  FacebookIcon,
+  PinterestIcon,
+  TumblrIcon,
+  TwitterIcon,
+  WhatsappIcon,
+} from "react-share";
+
+import withHover from "../components/share_buttons/withHover";
+
+const EmailIc = withHover(EmailIcon);
+const FacebookIc = withHover(FacebookIcon);
+const PinterestIc = withHover(PinterestIcon);
+const TumblrIc = withHover(TumblrIcon);
+const TwitterIc = withHover(TwitterIcon);
+const WhatsappIc = withHover(WhatsappIcon);
 
 const Header = dynamic(() => import("../components/header/header.component"), {
   ssr: false,
 });
+
+import styles from "../styles/Artwork.module.scss";
 
 const ArtWork = () => {
   return (
@@ -26,16 +51,48 @@ const ArtWork = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="artwork">
-        <Header />
-        <div className="container">
-          <div className="legend">some thext</div>
-          <div className="picture">
+      <Header />
+      <div className={styles.artwork}>
+        <div className={styles.container}>
+          <div className={styles.legend}>
+            <h3 className={styles.header}>Yet Another Masterpiece </h3>
+            <p className={styles.detail}>Acryl on linen</p>
+            <p className={styles.detail}>105cm x 105cm</p>
+            <p className={styles.detail}>41 3/8 x 63 in</p>
+            <div className={styles.price}>
+              <a className={styles.euro}>&euro; 3500</a>
+              <a href="" className={styles.btn_buy}>
+                Add To Cart
+              </a>
+            </div>
+            <div className={styles.share}>
+              <div className={styles.paragraph}>Share: </div>
+              <div className={styles.share_buttons}>
+                <EmailShareButton url={"https://localhost:3000/artwork"}>
+                  <EmailIc />
+                </EmailShareButton>
+                <FacebookShareButton>
+                  <FacebookIc />
+                </FacebookShareButton>
+                <PinterestShareButton>
+                  <PinterestIc />
+                </PinterestShareButton>
+                <TumblrShareButton>
+                  <TumblrIc />
+                </TumblrShareButton>
+                <TwitterShareButton>
+                  <TwitterIc />
+                </TwitterShareButton>
+                <WhatsappShareButton>
+                  <WhatsappIc />
+                </WhatsappShareButton>
+              </div>
+            </div>
+          </div>
+          <div className={styles.picture}>
             <img
-              className="image"
-              width="100%"
-              heigth="100%"
-              src="https://picsum.photos/700/550"
+              className={styles.image}
+              src="https://picsum.photos/1900/900"
             />
           </div>
         </div>

@@ -69,3 +69,13 @@ div.parallax::after {
     background-image: url("https://artbykuze.imgix.net/testim.jpg?auto=format&w=2320");
   }
 }
+
+@media screen and (max-width: 800px) {
+  div.parallax {
+    height: 40vh;
+  }
+
+  div.parallax::after {
+    transform: translateZ(-1px) translateY(45rem) scale(2.7);
+  }
+}

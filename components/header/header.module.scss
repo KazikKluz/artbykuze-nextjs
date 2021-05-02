@@ -12,6 +12,7 @@
 }
 
 .front {
+  max-height: 12vh;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -68,4 +69,10 @@
 
 .option:hover {
   color: #d81e5b;
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    padding: 0 1rem;
+  }
 }
