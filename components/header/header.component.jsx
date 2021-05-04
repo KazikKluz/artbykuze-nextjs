@@ -26,7 +26,7 @@ const Header = () => {
       setVisibility({ top: "0" });
     } else {
       {
-        !active && setVisibility({ top: "-12vh" });
+        !active && setVisibility({ top: "-200px" });
       }
     }
     position = currentScrollPos;

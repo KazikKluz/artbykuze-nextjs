@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import images from "./images";
+import images from "../../dataArray";
 
 import GalleryItem from "../gallery-item/gallery-item.component";
 
@@ -39,7 +39,7 @@ const GalleryDisplay = () => {
 
   return (
     <div className={styles.gallery_display}>
-      {images.map(({ id, ...otherProps }) => {
+      {images.paintings.map(({ id, ...otherProps }) => {
         return <GalleryItem key={id} {...otherProps} />;
       })}
     </div>

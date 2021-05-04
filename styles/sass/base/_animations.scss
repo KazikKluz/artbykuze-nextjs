@@ -21,8 +21,7 @@
 }
 
 div.parallax {
-  width: 100vw;
-  height: 60vh;
+  height: 60rem;
   position: relative;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -72,10 +71,10 @@ div.parallax::after {
 
 @media screen and (max-width: 800px) {
   div.parallax {
-    height: 40vh;
+    height: 40rem;
   }
 
   div.parallax::after {
-    transform: translateZ(-1px) translateY(45rem) scale(2.7);
+    transform: translateZ(-1px) translateY(12rem) scale(2.7);
   }
 }

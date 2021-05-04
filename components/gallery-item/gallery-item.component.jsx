@@ -1,21 +1,21 @@
 import React from "react";
-import Image from "next/image";
+import Imgix from "react-imgix";
 
-const GalleryItem = ({ imageUrl, width, height }) => (
+const GalleryItem = ({ imgUrl, title, medium }) => (
   <div>
     <div className="gallery_item reveal">
       <div className="image_container">
-        <Image
+        <Imgix
           className="image"
-          src={imageUrl}
-          width={width}
-          height={height}
-          layout="responsive"
+          src={imgUrl}
+          width="100%"
+          height="auto"
+          sizes="(max-width: 65rem) 70vw, 25vw"
         />
       </div>
       <div className="description">
-        <p className="text_main">Some text</p>
-        <p className="text_sub">More detailed description</p>
+        <p className="text_main">{title}</p>
+        <p className="text_sub">{medium}</p>
       </div>
     </div>
   </div>

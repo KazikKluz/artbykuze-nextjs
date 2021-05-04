@@ -1,5 +1,6 @@
 .container {
   min-height: 12vh;
+  height: 8.6rem;
   display: flex;
   padding: 0 3.25rem;
   justify-content: space-between;
@@ -19,8 +20,9 @@
   height: 100%;
   z-index: 9;
   position: sticky;
-
+  top: 12vh;
   transition: top 0.5s;
+  position: absolute;
 }
 
 .back {

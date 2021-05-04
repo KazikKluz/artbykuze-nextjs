@@ -11,7 +11,7 @@ const BlogCard = ({ title, date, imgUrl }) => {
           className={styles.image}
           alt=""
           src={`https://artbykuze.imgix.net/${imgUrl}.jpg`}
-          sizes="(max-width: 80rem) 70vw, 25vw"
+          sizes="(max-width: 65rem) 70vw, 25vw"
         />
       </div>
       <h3 className={styles.title}>{title}</h3>
