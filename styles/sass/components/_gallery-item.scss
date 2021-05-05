@@ -1,5 +1,5 @@
 .gallery_item {
-  width: 15rem;
+  width: 35rem;
   margin: 2rem 0 2rem 0;
   display: inline-block;
   width: 100%;
@@ -33,6 +33,7 @@
 
     .image {
       transition: all 0.2s ease-in-out 0.2s;
+      width: 100%;
     }
   }
 

@@ -1,15 +1,18 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 
-import styles from "../styles/Gallery.module.css";
+import styles from "../../styles/Gallery.module.css";
 
-import TopButton from "../components/top-button/top-button.component";
-import Footer from "../components/footer/footer.component";
-import GalleryDisplay from "../components/gallery-display/gallery-display.component";
+import TopButton from "../../components/top-button/top-button.component";
+import Footer from "../../components/footer/footer.component";
+import GalleryDisplay from "../../components/gallery-display/gallery-display.component";
 
-const Header = dynamic(() => import("../components/header/header.component"), {
-  ssr: false,
-});
+const Header = dynamic(
+  () => import("../../components/header/header.component"),
+  {
+    ssr: false,
+  }
+);
 
 const Gallery = () => {
   return (

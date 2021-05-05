@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useRouter } from "next/router";
 
 import images from "../../dataArray";
 
@@ -30,16 +31,21 @@ const GalleryDisplay = () => {
     }
   };
 
+  const router = useRouter();
+
   useEffect(() => {
     reveal();
     document.body.addEventListener("scroll", reveal);
 
     return () => document.body.removeEventListener("scroll", reveal);
-  }, []);
+  }, [router.query.id]);
+
+  const theRoute = router.query.id;
+  if (!theRoute) return <div>Loading...</div>;
 
   return (
     <div className={styles.gallery_display}>
-      {images.paintings.map(({ id, ...otherProps }) => {
+      {images[router.query.id].map(({ id, ...otherProps }) => {
         return <GalleryItem key={id} {...otherProps} />;
       })}
     </div>

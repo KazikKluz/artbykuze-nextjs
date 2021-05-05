@@ -8,9 +8,7 @@ const GalleryItem = ({ imgUrl, title, medium }) => (
         <Imgix
           className="image"
           src={imgUrl}
-          width="100%"
-          height="auto"
-          sizes="(max-width: 65rem) 70vw, 25vw"
+          sizes="(max-width: 35rem) 70vw, 25vw"
         />
       </div>
       <div className="description">

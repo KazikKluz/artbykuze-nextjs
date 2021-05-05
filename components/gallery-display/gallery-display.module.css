@@ -19,9 +19,10 @@
 /* https://tobiasahlin.com/blog/common-flexbox-patterns/#masonry-or-mosaic */
 /* https://tobiasahlin.com/blog/masonry-with-css/ */
 .gallery_display {
-  columns: 3 30rem;
+  columns: 3 35rem;
   column-gap: 4rem;
   width: 90%;
   margin: 10rem auto 0;
   padding: 7vh 2%;
+  min-height: 100vh;
 }

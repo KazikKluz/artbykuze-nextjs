@@ -194,7 +194,7 @@ const collection = {
     {
       id: 200,
       title: "These flowers has always been here",
-      imgUrl: "https://artbykuze.imgix.net/theseflowershasalwaysbeenhere.jpg",
+      imgUrl: "https://artbykuze.imgix.net/thoseflowershasalwaysbeenhere.jpg",
       dimensions: "30cm x 42cm",
       medium: "mixed media",
       framed: "47cm x 61.5cm",
@@ -204,8 +204,7 @@ const collection = {
     {
       id: 201,
       title: "The magic, the beauty lives in your mind",
-      imgUrl:
-        "https://artbykuze.imgix.net/themagicthebeautylivesinyourmind.jpg",
+      imgUrl: "https://artbykuze.imgix.net/themagicthebeauty.jpg",
       dimensions: "30cm x 42cm",
       medium: "mixed media",
       framed: "47cm x 61.5cm",

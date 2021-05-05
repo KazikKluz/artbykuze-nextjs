@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
 import Image from "next/image";
 
@@ -38,6 +39,8 @@ const Header = () => {
     return () => document.body.removeEventListener("scroll", handleScroll);
   }, [active]);
 
+  const router = useRouter();
+
   return (
     <>
       <div style={visibility} className={styles.front}>
@@ -52,8 +55,19 @@ const Header = () => {
           </div>
           <div className={styles.options}>
             <a className={styles.option}>ABOUT</a>
-            <a className={styles.option}>PAINTINGS</a>
-            <a className={styles.option}>DRAWINGS</a>
+
+            <a
+              className={styles.option}
+              onClick={() => router.push("/gallery/paintings")}
+            >
+              PAINTINGS
+            </a>
+            <a
+              className={styles.option}
+              onClick={() => router.push("/gallery/drawings")}
+            >
+              DRAWINGS
+            </a>
             <a className={styles.option}>EXIBITIONS</a>
             <a className={styles.option}>BLOG</a>
             <a className={styles.option}>CONTACT</a>
@@ -61,7 +75,7 @@ const Header = () => {
           <Hamburger handleClick={handleClick} active={active} />
         </div>
         <div className={styles.behind}>
-          <HamburgerNav active={active} />
+          <HamburgerNav handleClick={handleClick} active={active} />
         </div>
       </div>
     </>

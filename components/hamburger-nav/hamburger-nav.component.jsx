@@ -1,15 +1,31 @@
 import React from "react";
+import { useRouter } from "next/router";
 
-const HamburgerNav = ({ active }) => {
+const HamburgerNav = ({ active, handleClick }) => {
+  const router = useRouter();
   return (
     <div className="hamnav u-text-center ">
       <a className="hamnav__option u-mb-10 t-ham-option opt1" href="#">
         ABOUT
       </a>
-      <a className="hamnav__option u-mb-10  t-ham-option opt2" href="#">
+      <a
+        onClick={() => {
+          router.push("/gallery/paintings");
+          handleClick();
+        }}
+        className="hamnav__option u-mb-10  t-ham-option opt2"
+        href="#"
+      >
         PAINTINGS
       </a>
-      <a className="hamnav__option u-mb-10 t-ham-option opt3" href="#">
+      <a
+        onClick={() => {
+          router.push("/gallery/drawings");
+          handleClick();
+        }}
+        href="#"
+        className="hamnav__option u-mb-10 t-ham-option opt3"
+      >
         DRAWINGS
       </a>
       <a className="hamnav__option u-mb-10 t-ham-option opt4" href="#">
