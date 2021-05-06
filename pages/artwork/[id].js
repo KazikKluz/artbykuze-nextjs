@@ -1,8 +1,9 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 import dynamic from "next/dynamic";
 
-import Footer from "../components/footer/footer.component";
+import Footer from "../../components/footer/footer.component";
 import {
   EmailShareButton,
   FacebookShareButton,
@@ -18,7 +19,7 @@ import {
   WhatsappIcon,
 } from "react-share";
 
-import withHover from "../components/share_buttons/withHover";
+import withHover from "../../components/share_buttons/withHover";
 
 const EmailIc = withHover(EmailIcon);
 const FacebookIc = withHover(FacebookIcon);
@@ -27,13 +28,17 @@ const TumblrIc = withHover(TumblrIcon);
 const TwitterIc = withHover(TwitterIcon);
 const WhatsappIc = withHover(WhatsappIcon);
 
-const Header = dynamic(() => import("../components/header/header.component"), {
-  ssr: false,
-});
+const Header = dynamic(
+  () => import("../../components/header/header.component"),
+  {
+    ssr: false,
+  }
+);
 
-import styles from "../styles/Artwork.module.scss";
+import styles from "../../styles/Artwork.module.scss";
 
-const ArtWork = () => {
+const ArtWork = ({ id }) => {
+  const router = useRouter();
   return (
     <>
       <Head>

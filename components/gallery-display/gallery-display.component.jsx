@@ -46,7 +46,7 @@ const GalleryDisplay = () => {
   return (
     <div className={styles.gallery_display}>
       {images[router.query.id].map(({ id, ...otherProps }) => {
-        return <GalleryItem key={id} {...otherProps} />;
+        return <GalleryItem key={id} id={id} {...otherProps} />;
       })}
     </div>
   );

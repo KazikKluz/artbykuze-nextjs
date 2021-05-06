@@ -10,7 +10,9 @@ const HamburgerNav = ({ active, handleClick }) => {
       </a>
       <a
         onClick={() => {
-          router.push("/gallery/paintings");
+          router
+            .push("/gallery/paintings")
+            .then(() => document.body.scrollTo(0, 0));
           handleClick();
         }}
         className="hamnav__option u-mb-10  t-ham-option opt2"
@@ -20,7 +22,9 @@ const HamburgerNav = ({ active, handleClick }) => {
       </a>
       <a
         onClick={() => {
-          router.push("/gallery/drawings");
+          router
+            .push("/gallery/drawings")
+            .then(() => document.body.scrollTo(0, 0));
           handleClick();
         }}
         href="#"

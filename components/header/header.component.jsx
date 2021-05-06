@@ -24,10 +24,13 @@ const Header = () => {
   const handleScroll = () => {
     let currentScrollPos = document.body.scrollTop;
     if (currentScrollPos < position) {
-      setVisibility({ top: "0" });
+      setVisibility({ transform: "translateY(0)" });
     } else {
       {
-        !active && setVisibility({ top: "-200px" });
+        !active &&
+          setVisibility({
+            transform: "translateY(-12vh)",
+          });
       }
     }
     position = currentScrollPos;
@@ -58,13 +61,21 @@ const Header = () => {
 
             <a
               className={styles.option}
-              onClick={() => router.push("/gallery/paintings")}
+              onClick={() =>
+                router
+                  .push("/gallery/paintings")
+                  .then(() => document.body.scrollTo(0, 0))
+              }
             >
               PAINTINGS
             </a>
             <a
               className={styles.option}
-              onClick={() => router.push("/gallery/drawings")}
+              onClick={() => {
+                router
+                  .push("/gallery/drawings")
+                  .then(() => document.body.scrollTo(0, 0));
+              }}
             >
               DRAWINGS
             </a>

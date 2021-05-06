@@ -12,7 +12,7 @@ const Card = ({ title, imgUrl }) => {
           className={styles.image}
           alt=""
           src={`https://artbykuze.imgix.net/${imgUrl}.jpg`}
-          sizes="(max-width: 80rem) 70vw, 25vw"
+          sizes="(max-width: 65rem) 70vw, 25vw"
         />
       </div>
     </div>

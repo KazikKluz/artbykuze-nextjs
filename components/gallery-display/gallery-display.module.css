@@ -22,7 +22,7 @@
   columns: 3 35rem;
   column-gap: 4rem;
   width: 90%;
-  margin: 10rem auto 0;
-  padding: 7vh 2%;
+  margin: 0 auto;
+  padding: 6vh 2%;
   min-height: 100vh;
 }
