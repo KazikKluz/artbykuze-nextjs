@@ -159,7 +159,7 @@ const collection = {
     515: {
       id: 515,
       title: "A princes",
-      imgUrl: "https://artbykuze.imgix.net/aprincess.jpg",
+      imgUrl: "https://artbykuze.imgix.net/aprinces.jpg",
       dimensions: "40cm x 20cm",
       medium: "acrylic on canvas",
       framed: "45cm x 25cm",
@@ -170,7 +170,7 @@ const collection = {
     516: {
       id: 516,
       title: "Yellow doughnut",
-      imgUrl: "https://artbykuze.imgix.net/yellowdoughnut.jpg",
+      imgUrl: "https://artbykuze.imgix.net/yellowdonut.jpg",
       dimensions: "40cm x 20cm",
       medium: "acrylic on canvas",
       framed: "56cm x 36cm",
@@ -194,7 +194,7 @@ const collection = {
     200: {
       id: 200,
       title: "These flowers has always been here",
-      imgUrl: "https://artbykuze.imgix.net/theseflowershasalwaysbeenhere.jpg",
+      imgUrl: "https://artbykuze.imgix.net/thoseflowershasalwaysbeenhere.jpg",
       dimensions: "30cm x 42cm",
       medium: "mixed media",
       framed: "47cm x 61.5cm",
@@ -204,8 +204,7 @@ const collection = {
     201: {
       id: 201,
       title: "The magic, the beauty lives in your mind",
-      imgUrl:
-        "https://artbykuze.imgix.net/themagicthebeautylivesinyourmind.jpg",
+      imgUrl: "https://artbykuze.imgix.net/themagicthebeauty.jpg",
       dimensions: "30cm x 42cm",
       medium: "mixed media",
       framed: "47cm x 61.5cm",
@@ -224,7 +223,5 @@ const collection = {
     },
   },
 };
-
-collection.paintings.map((item) => console.log(item));
 
 export default collection;

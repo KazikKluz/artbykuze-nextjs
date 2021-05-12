@@ -1,9 +1,8 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import { useRouter } from "next/router";
 
 import styles from "../../styles/Gallery.module.css";
-
-import TopButton from "../../components/top-button/top-button.component";
 import Footer from "../../components/footer/footer.component";
 import GalleryDisplay from "../../components/gallery-display/gallery-display.component";
 
@@ -15,6 +14,8 @@ const Header = dynamic(
 );
 
 const Gallery = () => {
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -34,8 +35,7 @@ const Gallery = () => {
       </Head>
       <div className={styles.gallery}>
         <Header />
-        <GalleryDisplay />
-        <TopButton />
+        <GalleryDisplay params={router.query.id} />
         <Footer />
       </div>
     </>

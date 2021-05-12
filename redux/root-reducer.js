@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import { categoryReducer } from "./category/category.reducer";
+import { collectionReducer } from "./collection/collection.reducer";
 
 export default combineReducers({
-  category: categoryReducer,
+  collection: collectionReducer,
 });

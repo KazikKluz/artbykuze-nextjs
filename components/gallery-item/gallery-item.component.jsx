@@ -2,7 +2,6 @@ import React from "react";
 import Imgix from "react-imgix";
 
 const GalleryItem = ({ id, imgUrl, title, medium }) => {
-  console.log(id);
   return (
     <div>
       <div className="gallery_item reveal">

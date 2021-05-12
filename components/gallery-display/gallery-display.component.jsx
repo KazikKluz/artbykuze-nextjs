@@ -1,13 +1,15 @@
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
-
-import images from "../../dataArray";
+import { connect } from "react-redux";
+import { getCollectionByCategory } from "../../redux/collection/collection.actions";
+import { selectCategory } from "../../redux/collection/collection.selector";
+import { createStructuredSelector } from "reselect";
 
 import GalleryItem from "../gallery-item/gallery-item.component";
 
 import styles from "./gallery-display.module.css";
 
-const GalleryDisplay = () => {
+const GalleryDisplay = ({ collection, getCollection, params }) => {
   const reveal = () => {
     let reveals = document.querySelectorAll(".reveal");
     let windowheight = document.body.offsetHeight;
@@ -34,22 +36,36 @@ const GalleryDisplay = () => {
   const router = useRouter();
 
   useEffect(() => {
+    getCollection(router.query.id);
     reveal();
     document.body.addEventListener("scroll", reveal);
+    console.log("render!");
 
     return () => document.body.removeEventListener("scroll", reveal);
-  }, [router.query.id]);
+  }, [params]);
 
-  const theRoute = router.query.id;
-  if (!theRoute) return <div>Loading...</div>;
+  if (!collection) return <div>Loading...</div>;
+  console.log(collection);
 
   return (
     <div className={styles.gallery_display}>
-      {images[router.query.id].map(({ id, ...otherProps }) => {
+      {collection.map(({ id, ...otherProps }) => {
         return <GalleryItem key={id} id={id} {...otherProps} />;
       })}
     </div>
   );
 };
 
-export default GalleryDisplay;
+const mapStateToProps = createStructuredSelector({
+  collection: selectCategory,
+});
+
+// const mapStateToProps = (state) => ({
+//   collection: state.collection.collection,
+// });
+
+const mapDispatchToProps = (dispatch) => ({
+  getCollection: (params) => dispatch(getCollectionByCategory(params)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(GalleryDisplay);
