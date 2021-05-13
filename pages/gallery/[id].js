@@ -1,10 +1,17 @@
+import React, { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 
+import { createStructuredSelector } from "reselect";
+
 import styles from "../../styles/Gallery.module.css";
 import Footer from "../../components/footer/footer.component";
 import GalleryDisplay from "../../components/gallery-display/gallery-display.component";
+
+import { connect } from "react-redux";
+import { getCollectionByCategory } from "../../redux/collection/collection.actions";
+import { selectCategory } from "../../redux/collection/collection.selector";
 
 const Header = dynamic(
   () => import("../../components/header/header.component"),
@@ -13,8 +20,14 @@ const Header = dynamic(
   }
 );
 
-const Gallery = () => {
+const Gallery = ({ collection, getCollection }) => {
   const router = useRouter();
+  const params = router.query.id;
+
+  useEffect(() => {
+    getCollection(params);
+    console.log("render!");
+  }, [params]);
 
   return (
     <>
@@ -35,11 +48,19 @@ const Gallery = () => {
       </Head>
       <div className={styles.gallery}>
         <Header />
-        <GalleryDisplay params={router.query.id} />
+        <GalleryDisplay params={router.query.id} collection={collection} />
         <Footer />
       </div>
     </>
   );
 };
 
-export default Gallery;
+const mapStateToProps = createStructuredSelector({
+  collection: selectCategory,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  getCollection: (params) => dispatch(getCollectionByCategory(params)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Gallery);
